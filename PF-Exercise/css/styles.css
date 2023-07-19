@@ -34,7 +34,7 @@ a {
     position: relative;
     height: 100vh;
     background-image: linear-gradient(rgba(3, 4, 7, 0.48), rgba(5, 10, 30, 0.48)),
-        url('images/pexels-photo-450214.jpg');
+        url('images/marla-prusik-zh7pqPE8gCc-unsplash.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -193,7 +193,7 @@ a {
 
 .portfolio__btn {
     background-color: #45893A;
-    color: #fff;
+    color: rgb(255, 255, 255);
     height: 75px;
     width: 303px;
     padding: 2% 5%;
@@ -375,7 +375,6 @@ footer {
 
     .header__heading--h2 {
         font-size: 20px;
-
     }
 
     .header__heading--span1 {
@@ -425,7 +424,7 @@ footer {
 
     .about__heading--h2{
         font-size: 30px;
-        font-weight: 700px;
+        font-weight: 700;
     }
 
     .about__heading{
@@ -449,23 +448,60 @@ footer {
 
 
 /***********MEDIA QUERY PORTFOLIO SECTION*****/
-@media only screen and (max width: 600px) {
+@media only screen and (max-width: 600px) {
     .portfolio{
-        height: 180vh;
+        height: 200vh;
     }
 
     .portfolio__heading--h2{
         font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portfolio__img img{
+        width: 70%;
+        height: 280px;
+        margin: 0 auto 5%;
+
+    }
+
+    .portfolio__img:last-child {
+        margin-bottom: 10%;
+    }
+
+   
+    .portfolio__btn { 
+        padding: 5% 15%;
+    }
+
+
+}
+/***********MEDIA QUERY CONTACT SECTION*****/
+@media only screen and (max-width: 600px) {
+    .contact{
+        height: 200vh;
+    }
+
+    .contact__row{
+        flex-direction: column;
+    }
+
+    .contact__heading--h2{
+        font-size: 30px;
         font-weight: 700px;
     }
 
-    .portfolio__img{
-        width: 70px;
-        height: 280px;
-        margin: ;
+    .contact__btn.contact__btn--2 {
+        margin: 0%;
+    }
+    
+}
+
+/***********MEDIA QUERY FOOTER SECTION*****/
+
+@media only screen and (max-width: 600px) {
+    footer p{
+        padding: 5% 0 0;
     }
 }
 
-/***********MEDIA QUERY CONTACT SECTION*****/
-
-/***********MEDIA QUERY FOOTER SECTION*****/
